@@ -12,7 +12,8 @@ Store.create(:name => "Whistler", :annual_revenue => 1900000, :mens_apparel =>tr
 Store.create(:name => "Yaletown", :annual_revenue => 430000, :mens_apparel =>true, :womens_apparel => true )
 
 @men_stores = Store.where(mens_apparel:true)
-
-# puts @men_stores.count
-
+puts @men_stores.count
 @men_stores.each {|n| p n.name, n.annual_revenue }
+
+@woman_stores = Store.where(womens_apparel:true)
+@woman_stores.each {|store|p store.annual_revenue < 1000000, store.name}
