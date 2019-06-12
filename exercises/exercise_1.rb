@@ -4,9 +4,9 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
-class Stores < ActiveRecord::Base
-    attr_accessor :name,:annual_revenue,:mens_apparel,:womens_apparel
-end
+# class Stores < ActiveRecord::Base
+#     attr_accessor :name,:annual_revenue,:mens_apparel,:womens_apparel
+# end
 
 
 Store.create(:name => "Burnaby", :annual_revenue => 300000, :mens_apparel =>true, :womens_apparel => true )
